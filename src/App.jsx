@@ -4,6 +4,7 @@ import SearchBar from './component/SearchBar'
 import DataContext from './context/DataContext'
 import { API_URL } from "./utils/config"
 import { useInView } from 'react-intersection-observer';
+import ShemerUi from './component/ShemerUi'
 const App = () => {
 
   const [data, setData] = useState([])
@@ -24,11 +25,6 @@ const App = () => {
       setLimit((p) => p + 10)
     }
   }, [limit, inView])
-
-
-
-
-
 
 
   return (
